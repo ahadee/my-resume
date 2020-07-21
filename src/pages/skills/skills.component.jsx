@@ -11,20 +11,20 @@ import L_BOOTSTRAP4 from "../../assets/img/skills/bootstrap-4.svg";
 import L_REACT from "../../assets/img/skills/react.svg";
 import L_REDUX from "../../assets/img/skills/redux.svg";
 import L_REACT_ROUTER from "../../assets/img/skills/react-router.svg";
-import L_REACT_BOOTSTRAP from "../../assets/img/skills/react-bootstrap.svg";
+// import L_REACT_BOOTSTRAP from "../../assets/img/skills/react-bootstrap.svg";
 import L_NODE_JS from "../../assets/img/skills/nodejs.svg";
 import L_EXPRESS from "../../assets/img/skills/express.svg";
-import L_DJANGO from "../../assets/img/skills/django.svg";
-import L_FLASK from "../../assets/img/skills/flask.svg";
-import L_POSTGRESQL from "../../assets/img/skills/postgresql.svg";
-import L_MSSQL from "../../assets/img/skills/mssql.svg";
+// import L_DJANGO from "../../assets/img/skills/django.svg";
+// import L_FLASK from "../../assets/img/skills/flask.svg";
+// import L_POSTGRESQL from "../../assets/img/skills/postgresql.svg";
+// import L_MSSQL from "../../assets/img/skills/mssql.svg";
 import L_GIT from "../../assets/img/skills/git-icon.svg";
 import L_HEROKU from "../../assets/img/skills/heroku.svg";
 import L_DIGITAL_OCEAN from "../../assets/img/skills/digital-ocean.svg";
 import L_GITHUB_PAGES from "../../assets/img/skills/github.svg";
-import L_PYTHONANYWHERE from "../../assets/img/skills/pythonanywhere.svg";
+// import L_PYTHONANYWHERE from "../../assets/img/skills/pythonanywhere.svg";
 import L_JAVASCRIPT from "../../assets/img/skills/javascript.svg";
-import L_PYTHON from "../../assets/img/skills/python.svg";
+// import L_PYTHON from "../../assets/img/skills/python.svg";
 import "./skills.styles.css";
 
 const Skills = () => {
@@ -87,8 +87,8 @@ const Skills = () => {
                   </span>
 
                   <span className="p-2">
-                    <a className="text-dark text-decoration-none" href="https://react-bootstrap.github.io/" target="_blank" rel="noopener noreferrer">
-                      <Image src={L_REACT_BOOTSTRAP} alt="React Bootstrap" rounded className="image-style m-1"></Image> React-Bootstrap
+                    <a className="text-dark text-decoration-none" href="https://material-ui.com/" target="_blank" rel="noopener noreferrer">
+                      <Image src="https://material-ui.com/static/logo.png" alt="Material UI" rounded className="image-style m-1"></Image> Material-UI
                     </a>
                   </span>
                 </Card.Text>
@@ -115,13 +115,13 @@ const Skills = () => {
                   </span>
 
                   <span className="p-2">
-                    <a className="text-dark text-decoration-none" href="https://www.djangoproject.com/" target="_blank" rel="noopener noreferrer">
-                      <Image src={L_DJANGO} alt="Django" rounded className="image-style m-1"></Image> Django
+                    <a className="text-dark text-decoration-none" href="https://sequelize.org/v5/" target="_blank" rel="noopener noreferrer">
+                      <Image src="https://miro.medium.com/max/661/1*TkP2EwaX95ItAv_jGS7hSA.png" alt="Sequelize" rounded className="image-style m-1"></Image> Sequelize
                     </a>
                   </span>
                   <span className="p-2">
-                    <a className="text-dark text-decoration-none" href="https://flask.palletsprojects.com/en/1.1.x/" target="_blank" rel="noopener noreferrer">
-                      <Image src={L_FLASK} alt="Flask" rounded className="image-style m-1"></Image> Flask
+                    <a className="text-dark text-decoration-none" href="https://mongoosejs.com/docs/guide" target="_blank" rel="noopener noreferrer">
+                      <Image src="https://cms-assets.tutsplus.com/uploads/users/34/posts/29574/preview_image/mongoose.jpg" alt="MySQL" rounded className="image-style m-1"></Image> Mongoose
                     </a>
                   </span>
                 </Card.Text>
@@ -152,11 +152,11 @@ const Skills = () => {
                     </a>
                   </span>
 
-                  <span className="p-2">
+                  {/* <span className="p-2">
                     <a className="text-dark text-decoration-none" href="https://www.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">
                       <Image src={L_PYTHONANYWHERE} alt="pythonanywhere" rounded className="image-style m-1"></Image> PythonAnywhere
                     </a>
-                  </span>
+                  </span> */}
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -175,9 +175,15 @@ const Skills = () => {
                     </a>
                   </span>
 
-                  <span className="p-2">
+                  {/* <span className="p-2">
                     <a className="text-dark text-decoration-none" href="https://www.python.org/" target="_blank" rel="noopener noreferrer">
                       <Image src={L_PYTHON} alt="Python" rounded className="image-style m-1"></Image> Python
+                    </a>
+                  </span> */}
+
+                  <span className="p-2">
+                    <a className="text-dark text-decoration-none" href="https://www.php.net/" target="_blank" rel="noopener noreferrer">
+                      <Image src="https://img2.pngdownload.id/20180904/xhu/kisspng-logo-image-computer-icons-php-portable-network-gra-william-davies-meng-mongodb-5b8e9698822d99.0636011515360713205332.jpg" alt="PHP" rounded className="image-style m-1"></Image> PHP
                     </a>
                   </span>
                 </Card.Text>
@@ -192,13 +198,13 @@ const Skills = () => {
                 <hr />
                 <Card.Text className="card-text d-flex justify-content-start flex-column">
                   <span className="p-2">
-                    <a className="text-dark text-decoration-none" href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer">
-                      <Image src={L_POSTGRESQL} alt="PostgreSQL" rounded className="image-style m-1"></Image> PostgreSQL
+                    <a className="text-dark text-decoration-none" href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">
+                      <Image src="https://cdn.iconscout.com/icon/free/png-512/mongodb-226029.png" alt="MongoDB" rounded className="image-style m-1"></Image> MongoDB
                     </a>
                   </span>
                   <span className="p-2">
-                    <a className="text-dark text-decoration-none" href="https://www.microsoft.com/en-us/sql-server/sql-server-2019" target="_blank" rel="noopener noreferrer">
-                      <Image src={L_MSSQL} alt="MS-SQL" rounded className="image-style m-1"></Image> MS-SQL
+                    <a className="text-dark text-decoration-none" href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer">
+                      <Image src="https://e7.pngegg.com/pngimages/1018/16/png-clipart-mysql-workbench-database-mysql-cluster-others-text-logo.png" alt="MySQL" rounded className="image-style m-1"></Image> MySQL
                     </a>
                   </span>
                 </Card.Text>

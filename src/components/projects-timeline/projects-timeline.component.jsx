@@ -1,9 +1,9 @@
 import React from "react";
 import { Timeline, Events, UrlButton, ImageEvent } from "@merc/react-timeline";
-import L_SmartBrain from "../../assets/img/projects/brain.webp";
-import L_RoboFriends from "../../assets/img/projects/Robofriends.webp";
-import L_ProductHuntClone from "../../assets/img/projects/product_hunt_clone.webp";
-import L_PortfolioUsingDjango from "../../assets/img/projects/portfolioUsingDjango.webp";
+import L_SmartBrain from "../../assets/img/projects/odaiba.png";
+import L_RoboFriends from "../../assets/img/projects/searah.png";
+import L_ProductHuntClone from "../../assets/img/projects/shoppie.png";
+import L_PortfolioUsingDjango from "../../assets/img/projects/fusiontech.png";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import L_REACT from "../../assets/img/skills/react.svg";
@@ -14,9 +14,10 @@ import Image from "react-bootstrap/Image";
 import L_REDUX from "../../assets/img/skills/redux.svg";
 import L_HTML5 from "../../assets/img/skills/html-5.svg";
 import L_CSS3 from "../../assets/img/skills/css3.svg";
-import L_BOOTSTRAP4 from "../../assets/img/skills/bootstrap-4.svg";
-import L_DJANGO from "../../assets/img/skills/django.svg";
-import L_DIGITAL_OCEAN from "../../assets/img/skills/digital-ocean.svg";
+import L_HEROKU from "../../assets/img/skills/heroku.svg";
+// import L_BOOTSTRAP4 from "../../assets/img/skills/bootstrap-4.svg";
+// import L_DJANGO from "../../assets/img/skills/django.svg";
+// import L_DIGITAL_OCEAN from "../../assets/img/skills/digital-ocean.svg";
 
 import "./projects-timeline.styles.css";
 
@@ -27,7 +28,7 @@ export default function TimeLine() {
       <Timeline>
         <Events>
           {/* Project: Smart Brain */}
-          <ImageEvent date="21/01/2020" className="text-center" text="Smart Brain Face Detect app" src={L_SmartBrain} alt="Smart Brain Face Detect">
+          <ImageEvent date="21/06/2020" className="text-center" text="Odaiba App" src={L_SmartBrain} alt="Odaiba">
             <div className="d-flex justify-content-between flex-column mt-1">
               <div>
                 <Accordion>
@@ -38,13 +39,13 @@ export default function TimeLine() {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> An app that detects face in a picture.
+                        <strong>Description:</strong> An app that allows kids to complete assignments in virtual groups, while giving the teacher a real-time overview of the classroom and the ability to join any group to help them with their work.
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
-                          <li>Register new user</li>
-                          <li>Signin exiting user</li>
-                          <li>Keep tracks of entries for each user</li>
+                          <li>Still on progress</li>
+                          {/* <li>Signin exiting user</li>
+                          <li>Keep tracks of entries for each user</li> */}
                         </ul>
                         <hr />
                         <strong>Tech used:</strong>
@@ -70,7 +71,7 @@ export default function TimeLine() {
                             </span>
                           </li>
                         </ul>
-                        <hr />
+                        {/* <hr />
                         <em>
                           <strong>SignUp/ Signin:</strong>
                           <br />
@@ -83,29 +84,29 @@ export default function TimeLine() {
                           email: demo@demo.com
                           <br />
                           password: demo
-                        </em>
+                        </em> */}
                       </Card.Body>
                     </Accordion.Collapse>
                   </Card>
                 </Accordion>
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
-                <UrlButton href="https://smart-face-detect-app.herokuapp.com/" target="_blank">
+                {/* <UrlButton href="https://smart-face-detect-app.herokuapp.com/" target="_blank">
                   SEE LIVE
-                </UrlButton>
-                <UrlButton href="https://github.com/akjha96/Smart_Brain" target="_blank">
+                </UrlButton> */}
+                <UrlButton href="https://github.com/odaiba-app" target="_blank">
                   SOURCE CODE
                 </UrlButton>
-                <UrlButton href="https://www.youtube.com/watch?v=ZZYSpi_blL0" target="_blank">
+                {/* <UrlButton href="https://www.youtube.com/watch?v=ZZYSpi_blL0" target="_blank">
                   WATCH VIDEO
-                </UrlButton>
+                </UrlButton> */}
               </div>
             </div>
           </ImageEvent>
 
           {/* Project: RoboFriends */}
 
-          <ImageEvent date="14/01/2020" className="text-center" text="RoboFriends" src={L_RoboFriends} alt="Robo Friends">
+          <ImageEvent date="26/05/2020" className="text-center" text="Searah" src={L_RoboFriends} alt="Robo Friends">
             <div className="d-flex justify-content-between flex-column mt-1">
               <div>
                 <Accordion>
@@ -116,12 +117,16 @@ export default function TimeLine() {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> An app that allows to search through robots fetched in real-time with users.
+                        <strong>Description:</strong> Searah is an application that helps people who want to find friend for travelling around.
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
-                          <li>Search through Robots</li>
-                          <li>Users and Robots being fetched via API call</li>
+                          <li>Register as new user</li>
+                          <li>Signin as existing user</li>
+                          <li>Edit profile user</li>
+                          <li>Create new trip</li>
+                          <li>Search by city</li>
+                          <li>Join to someone's trip</li>
                           <li>Usage of Redux store</li>
                         </ul>
                         <hr />
@@ -149,7 +154,17 @@ export default function TimeLine() {
                           </li>
                           <li>
                             <span className="p-2">
-                              <Image src={L_POSTGRESQL} alt="PostgreSQL" rounded className="image-style1 m-1"></Image> PostgreSQL
+                              <Image src="https://miro.medium.com/max/661/1*TkP2EwaX95ItAv_jGS7hSA.png" alt="Sequelize" rounded className="image-style1 m-1"></Image> Sequelize
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image src={L_HEROKU} alt="Sequelize" rounded className="image-style1 m-1"></Image> Heroku
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image src="https://e7.pngegg.com/pngimages/1018/16/png-clipart-mysql-workbench-database-mysql-cluster-others-text-logo.png" alt="Sequelize" rounded className="image-style1 m-1"></Image> MySQL
                             </span>
                           </li>
                         </ul>
@@ -159,11 +174,11 @@ export default function TimeLine() {
                 </Accordion>
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
-                <UrlButton href="https://akjha96.github.io/RoboFriends/" target="_blank">
-                  SEE LIVE
-                </UrlButton>
-                <UrlButton href="https://github.com/akjha96/RoboFriends" target="_blank">
+                <UrlButton href="https://github.com/searah-impactbyte-mizuchi" target="_blank">
                   SOURCE CODE
+                </UrlButton>
+                <UrlButton href="https://searahcorp.netlify.app/" target="_blank">
+                  SEE LIVE
                 </UrlButton>
               </div>
             </div>
@@ -171,7 +186,7 @@ export default function TimeLine() {
 
           {/* Project: Product_Hunt_Clone */}
 
-          <ImageEvent date="15/12/2019" className="text-center" text="Product Hunt Clone" src={L_ProductHuntClone} alt="Product Hunt Clone">
+          <ImageEvent date="24/04/2020" className="text-center" text="Shoppie" src={L_ProductHuntClone} alt="Product Hunt Clone">
             <div className="d-flex justify-content-between flex-column mt-1">
               <div>
                 <Accordion>
@@ -182,25 +197,26 @@ export default function TimeLine() {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> This website is a clone of Product Hunt built using Django.
+                        <strong>Description:</strong> This website is a shooping list using react and material-ui.
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
                           <li>Register as new user</li>
                           <li>Signin as existing user</li>
-                          <li>Raise a Product for people to see and Vote</li>
+                          <li>Edit profile user</li>
+                          <li>Add shopping list</li>
                           <li>Delete a product</li>
-                          <li>Like and Dislike a product</li>
-                          <li>Fully funtional Administration panel</li>
+                          <li>Edit a product</li>
+                          <li>Search by name of product</li>
                         </ul>
                         <hr />
                         <strong>Tech used:</strong>
                         <ul>
-                          <li>
+                          {/* <li>
                             <span className="p-2">
                               <Image src={L_HTML5} alt="HTML 5" rounded className="image-style m-1"></Image> HTML5
                             </span>
-                          </li>
+                          </li> */}
                           <li>
                             <span className="p-2">
                               <Image src={L_CSS3} alt="CSS 3" rounded className="image-style m-1"></Image> CSS3
@@ -208,17 +224,22 @@ export default function TimeLine() {
                           </li>
                           <li>
                             <span className="p-2">
-                              <Image src={L_BOOTSTRAP4} alt="Bootstrap 4" rounded className="image-style m-1"></Image> Bootstrap 4
+                              <Image src={L_REACT} alt="React" rounded className="image-style1 m-1"></Image> React
                             </span>
                           </li>
                           <li>
+                            <span className="p-2">
+                              <Image src="https://material-ui.com/static/logo.png" alt="Material-UI" rounded className="image-style m-1"></Image> Material-UI
+                            </span>
+                          </li>
+                          {/* <li>
                             <span className="p-2">
                               <Image src={L_DJANGO} alt="Django" rounded className="image-style m-1"></Image> Django
                             </span>
-                          </li>
+                          </li>*/}
                           <li>
                             <span className="p-2">
-                              <Image src={L_POSTGRESQL} alt="PostgreSQL" rounded className="image-style1 m-1"></Image> PostgreSQL
+                              <Image src={L_HEROKU} alt="HEROKU" rounded className="image-style1 m-1"></Image> HEROKU
                             </span>
                           </li>
                         </ul>
@@ -228,15 +249,18 @@ export default function TimeLine() {
                 </Accordion>
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
-                <UrlButton href="https://github.com/akjha96/product_hunt_clone" target="_blank">
+                <UrlButton href="https://github.com/ahadee/shoppinglist" target="_blank">
                   SOURCE CODE
+                </UrlButton>
+                <UrlButton href="https://shoppie-group4.netlify.app/" target="_blank">
+                  SEE LIVE
                 </UrlButton>
               </div>
             </div>
           </ImageEvent>
 
           {/* Project: Portfolio using Django */}
-          <ImageEvent date="07/12/2019" className="text-center" text="Portfolio using Django" src={L_PortfolioUsingDjango} alt="Portfolio using Django">
+          <ImageEvent date="23/03/2020" className="text-center" text="Ecommerce using HTML and CSS" src={L_PortfolioUsingDjango} alt="Portfolio using Django">
             <div className="d-flex justify-content-between flex-column mt-1">
               <div>
                 <Accordion>
@@ -247,9 +271,9 @@ export default function TimeLine() {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> This is my first portfolio website built using Django.
+                        <strong>Description:</strong> This is my first static ecommerce using HTML and CSS.
                         <hr />
-                        <strong>Features:</strong>
+                        {/* <strong>Features:</strong>
                         <ul className="list-styles pt-1">
                           <li>Send emails</li>
                           <li>View my projects</li>
@@ -257,7 +281,7 @@ export default function TimeLine() {
                           <li>Hosted using Digital ocean under www.akjfun.com</li>
                           <li>Fully funtional Administration panel</li>
                         </ul>
-                        <hr />
+                        <hr /> */}
                         <strong>Tech used:</strong>
                         <ul>
                           <li>
@@ -270,7 +294,7 @@ export default function TimeLine() {
                               <Image src={L_CSS3} alt="CSS 3" rounded className="image-style m-1"></Image> CSS3
                             </span>
                           </li>
-                          <li>
+                          {/* <li>
                             <span className="p-2">
                               <Image src={L_BOOTSTRAP4} alt="Bootstrap 4" rounded className="image-style m-1"></Image> Bootstrap 4
                             </span>
@@ -289,10 +313,10 @@ export default function TimeLine() {
                             <span className="p-2">
                               <Image src={L_DIGITAL_OCEAN} alt="Digital Ocean" rounded className="image-style m-1"></Image> Digital-Ocean
                             </span>
-                          </li>
+                          </li> */}
                         </ul>
                         <hr />
-                        <em>
+                        {/* <em>
                           <strong>View Demo Video:</strong>
                           <br />
                           <br />
@@ -301,15 +325,18 @@ export default function TimeLine() {
                           You can still see a video of my old portfolio by clicking on the button below.
                           <br />
                           <br />
-                        </em>
+                        </em> */}
                       </Card.Body>
                     </Accordion.Collapse>
                   </Card>
                 </Accordion>
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
-                <UrlButton href="https://youtu.be/PCwEuW4OmWA" target="_blank">
-                  WATCH VIDEO
+                <UrlButton href="https://github.com/Website-group-IB1/website-group-project" target="_blank">
+                  SOURCE CODE
+                </UrlButton>
+                <UrlButton href="https://group-1-website.netlify.com/index.html" target="_blank">
+                  SEE LIVE
                 </UrlButton>
               </div>
             </div>
