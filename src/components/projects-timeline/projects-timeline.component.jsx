@@ -177,7 +177,7 @@ export default function TimeLine() {
                 <UrlButton href="https://github.com/searah-impactbyte-mizuchi" target="_blank">
                   SOURCE CODE
                 </UrlButton>
-                <UrlButton href="https://searahcorp.netlify.app/" target="_blank">
+                <UrlButton href="https://searahcorp.netlify.app/main-page" target="_blank">
                   SEE LIVE
                 </UrlButton>
               </div>
